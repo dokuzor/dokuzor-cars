@@ -1,0 +1,364 @@
+/***** RESET *****/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	/*font-size: 100%;
+	vertical-align: baseline;*/
+	
+}
+html, body {height:100%;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;} /* tables still need 'cellspacing="0"' in the markup */
+textarea {overflow:auto;}
+/***** RESET *****/
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'DM Sans', sans-serif
+}
+
+p{
+	line-height: 24px;
+}
+
+img{
+	border-radius: 5px;
+}
+/*#18191a*/
+
+#socialnav{
+	padding: 10px;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+}
+
+#socialnav li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#socialnav li a{
+	color: #fff;
+	font-size: 20px;
+}
+
+#navwrapper-md {
+	padding: 25px;
+	background-color: #18191a;
+	box-shadow:  0px 3px 140px 50px #18191a;
+}
+
+#navwrapper-md nav{
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+#navwrapper-md  nav ul li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#navwrapper-md  nav ul li a{
+	color: #e6ebe7;
+	transition-duration: 0.3s;
+}
+
+#navwrapper-md  nav ul li :hover{
+	text-decoration: none;
+	transition-delay: 0.1s;
+	color: #e8cc15;
+}
+
+#searchbarself,#searchbarself2{
+	display: none;
+}
+
+li#textbar,li#textbar2{
+	width: 0;
+	transition-duration: 0.5s;
+	top: -5px;
+	position: absolute;
+	left: 0;
+	z-index: 10;
+	/*width: 95%;*/
+	}
+
+	li#textbar2{
+		position:relative;
+	}
+
+
+	#textbarself,#textbarself2{
+		height: 0;
+		padding: 0;
+		border: 0px solid;
+	}
+
+
+/*UST MENU BİTTİ SM BOYUTLARA KADAR*/
+
+
+
+#navwrapper-xsml{
+	display: none;
+	padding: 15px;
+	background-color:#18191a;
+	box-shadow:  0px 3px 140px 50px #18191a;
+}
+
+#navwrapper-xsml nav{
+	display: flex;
+	justify-content: center;
+	height: 0;
+	transition-duration: 0.6s;
+}
+
+#navwrapper-xsml nav ul{
+	display: none;
+}
+
+#navwrapper-xsml nav li{
+	margin-top: 10px;
+}
+
+#navwrapper-xsml nav li a{
+	color: #fff;
+}
+
+#navwrapper-xsml nav li a:hover{
+	text-decoration: none;
+	color: #e8cc15;
+}
+
+
+
+
+#header{
+	height: 100vh;
+	background-image: url(images/jeepheader.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat no-repeat;
+	background-attachment: fixed;
+	padding: 15px
+}
+
+#header h1{
+	font-size: 88px;
+}
+
+
+#carchoose ul{
+	margin-right: 120px;
+	margin-top: 10px;
+}
+
+#carchoose ul li{
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 10px;
+	transition-duration: 0.3s;
+}
+
+.card-product{
+	background-color: #ddd;
+	padding: 10px;
+	box-shadow: 0px 3px 50px 2px #000;
+	margin:20px;
+}
+
+
+#carchoose ul li:hover{
+	color: orangered;
+	transform: scale(1.1);
+}
+
+
+.product{
+	height: 0vh; /*95*/
+	padding: 0px; /*10*/
+	width: 0%; /*80*/
+	background-color: #ddd;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 5px;
+	z-index: 40;
+	scroll-behavior: scroll;
+	transition-duration: 0.8s;
+}
+
+.product ul li{
+	margin-top: 10px;
+}
+
+.product section{
+	display: none;
+}
+
+
+#imgwrapper{
+	max-width: 100%;
+	background-color: #18191a;
+	padding: 10px;
+}
+
+.resim{
+	width: 100%;
+	display: none;
+}
+
+.aktif{
+	display: block;
+	animation: fade 1s ease;
+}
+
+
+@keyframes fade{
+	0%{opacity: .5;}
+	100%{opacity: 1;}
+}
+
+.ileri{
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #ddd;
+	padding: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.geri{
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #ddd;
+	padding: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	
+}
+
+
+#imgwrapper ul{
+	text-align: center;
+	margin-top: 20px;
+}
+
+#imgwrapper ul li{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+	border-radius: 50%;
+	border: 1px solid;
+	border-color: #fff;
+}
+
+.aktiflist{
+	background: #ddd;
+}
+
+
+footer{
+	background-color: #18191a;
+	padding: 50px;
+	color: #ddd;
+}
+
+footer ul {
+	margin-top: 20px;
+}
+
+footer ul li{
+	display: inline-block;
+	margin-left: 5px;
+}
+
+footer ul li a{
+	color: #ddd;
+	font-size: 19px;
+}
+
+footer ul li a:hover{
+	color: #ddd;
+}
+
+@media screen and (max-width:768px){
+
+	#header{
+		height: auto;		
+		}
+
+	#navwrapper-md{
+		display: none;
+	}
+
+	#navwrapper-xsml{
+		display: block;
+	}
+
+	#carchoose ul{
+		margin-right: 20px;
+	}
+
+	.product{
+		height: auto;
+}
+
+}
+
+
+
+@media screen and (max-width:576px){
+		#header h1{
+			font-size: 44px;
+		}
+
+}
+
+
+
+
+@media screen and (max-width:380px){
+	#carchoose ul{
+		font-size: 14px;
+		margin-left: 0;
+	}
+
+	#header{
+		height: 100vh;
+	}
+}
+
+
+@media screen and (max-width:350px){
+	#carchoose ul{
+		font-size: 12px;
+		margin-left: 0;
+	}
+}
+
+
+@media screen and (max-width:315px){
+	#carchoose ul{
+		font-size: 11px;
+		margin-left: 0;
+	}
+}
